@@ -4,44 +4,53 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SVG class name editor</title>
-		<link rel="stylesheet" href="" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<input type="file" id="image-upload" accept=".svg" />
-		<div>
-			<label for="group-class-input">Group Class:</label>
-			<input
-				type="text"
-				id="group-class-input"
-				placeholder="Enter group class name"
-			/>
-		</div>
-		<div>
-			<label for="path-class-input">Path Class:</label>
-			<input
-				type="text"
-				id="path-class-input"
-				placeholder="Enter path class name"
-			/>
-		</div>
-		<div>
-			<label for="text-class-input">Text Class:</label>
-			<input
-				type="text"
-				id="text-class-input"
-				placeholder="Enter text class name"
-			/>
-		</div>
-		<button id="add-classes-button">Add Classes</button>
-		<button id="clear-button">Clear</button>
-		<div id="edited-svg-container"></div>
-		<button id="download-button">Download</button>
-		<div id="progress-indicator" style="display: none">
-			Adding classes...
-		</div>
-		<div id="success-message" style="display: none">
-			Classes added successfully!
-		</div>
+		<header>
+			<h2>Add classes for SVG images</h2>
+		</header>
+		<main>
+			<div class="content-wrapper">
+				<div id="edited-svg-container"></div>
+				<input type="file" id="image-upload" accept=".svg" />
+				<div>
+					<label for="group-class-input">Group Class:</label>
+					<input
+						type="text"
+						id="group-class-input"
+						placeholder="Enter group class name"
+					/>
+				</div>
+				<div>
+					<label for="path-class-input">Path Class:</label>
+					<input
+						type="text"
+						id="path-class-input"
+						placeholder="Enter path class name"
+					/>
+				</div>
+				<div>
+					<label for="text-class-input">Text label Class:</label>
+					<input
+						type="text"
+						id="text-class-input"
+						placeholder="Enter text class name"
+					/>
+				</div>
+				<div class="btn-center">
+					<button id="add-classes-button">Add Classes</button>
+					<div id="progress-indicator" style="display: none">
+						Adding classes...
+					</div>
+					<div id="success-message" style="display: none">
+						Classes added successfully!
+					</div>
+					<button id="clear-button">Clear inputs</button>
+					<button id="download-button">Download</button>
+				</div>
+			</div>
+		</main>
 	</body>
 
 	<script src="app.js"></script>
