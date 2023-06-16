@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    outline: transparent;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #222831;
+}
+
+header {
+    background: #FFD369;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h2 {
+    color: #393E46;
+    font-size: 1.5rem;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper {
+    padding: 3rem 1rem;
+}
+label, input[type="file"] {
+    color: #FFD369;
+}
+
+label {
+    display: block;
+    padding-bottom: .5rem;
+}
+
+input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 6px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+button {
+    border: 0;
+    background: #FFD369;
+    padding: .5rem 1.5rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button#clear-button {
+    margin-bottom: 3rem;
+}
+button#clear-button {
+    background: #ff4b4b;
+}
+button#download-button {
+    background: #1FAB89;
+}
+
+
+.btn-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edited-svg-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#edited-svg-container svg {
+    width: 200px;
+    height: 200px;
+}
+
+#success-message {
+    color: #14FFEC;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
